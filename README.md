@@ -33,36 +33,42 @@ df
 ```
 ## Output
 <img width="1147" height="410" alt="image" src="https://github.com/user-attachments/assets/fb6208ca-d7bf-40fa-ad24-21bbe73833f3" />
+
 ```
 python
- df.describe()
+df.describe()
 ```
 ## Output
 <img width="695" height="295" alt="image" src="https://github.com/user-attachments/assets/a02dd7bd-d159-44df-a38c-e5ae9ee68f57" />
+
 ```
 python
 df.dtypes
 ```
 ## Output
 <img width="183" height="443" alt="image" src="https://github.com/user-attachments/assets/b08975ec-0b7c-42f7-87c7-08912db2aad5" />
+
 ```
 python
 df.shape
 ```
 ## Output
 <img width="94" height="34" alt="image" src="https://github.com/user-attachments/assets/510ac8c4-7006-4437-b409-1f336efb52a4" />
+
 ```
 python
 df.value_counts()
 ```
 ## Output
 <img width="1198" height="441" alt="image" src="https://github.com/user-attachments/assets/5d500538-a9ac-44e9-9d2d-3f6822614676" />
+
 ```
 python
 df['Age'].value_counts()
 ```
 ## Output
 <img width="129" height="438" alt="image" src="https://github.com/user-attachments/assets/9981b13e-9537-4288-a0da-ed90c1ffd9ee" />
+
 ```
 python
 df.set_index("PassengerId", inplace=True)
@@ -70,18 +76,21 @@ df
 ```
 ## Output
 <img width="1122" height="402" alt="image" src="https://github.com/user-attachments/assets/c798d4f5-b460-4a98-bc98-2c9b54f07dfc" />
+
 ```
 python
 df.nunique()
 ```
 ## Output
 <img width="145" height="417" alt="image" src="https://github.com/user-attachments/assets/38567fbc-8870-4a29-8fce-9e28b9a863fa" />
+
 ```
 python
 sns.countplot(data=df,x='Survived')
 ```
 ## Output
 <img width="585" height="460" alt="image" src="https://github.com/user-attachments/assets/81a211f4-2802-490d-8e8f-055655cac32b" />
+
 ```
 python
 df.rename(columns={'Sex':'Gender'},inplace=True)
@@ -89,6 +98,7 @@ df
 ```
 ## Output
 <img width="1119" height="434" alt="image" src="https://github.com/user-attachments/assets/1600fdb9-3f7c-416b-b62d-52cd8f780ce5" />
+
 ```
 python
 sns.catplot(x="Gender",col="Survived",kind="count",data=df)
@@ -101,12 +111,14 @@ df.boxplot(column="Age",by="Survived")
 ```
 ## Output
 <img width="569" height="487" alt="image" src="https://github.com/user-attachments/assets/4660e87c-4e2a-4f87-a684-2be4704e1eb6" />
+
 ```
 python
 sns.scatterplot(x=df["Age"],y=df["Fare"])
 ```
 ## Output
 <img width="586" height="453" alt="image" src="https://github.com/user-attachments/assets/5591900f-1a03-4dd6-ac94-f9b7fc0228b2" />
+
 ```
 python
 fig, axl=plt.subplots(figsize=(8,5))
@@ -114,6 +126,7 @@ fig, axl=plt.subplots(figsize=(8,5))
 ```
 ## Output
 <img width="693" height="454" alt="image" src="https://github.com/user-attachments/assets/e990ada3-ed94-493b-a19c-6276864ddce0" />
+
 ```
 python
 plt=sns.boxplot(x='Pclass',y='Age',hue='Gender',data=df)
